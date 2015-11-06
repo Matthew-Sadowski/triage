@@ -1,0 +1,150 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.group0943.triage.ViewVitals" >
+
+	<Button
+        android:id="@+id/backButtonFromViewRecords"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="load_patientInfo"
+        android:text="@string/backButtonText" />
+
+    <TextView
+        android:id="@+id/patient_bp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/patient_temp"
+        android:layout_marginTop="29dp"
+        android:text="@string/blood_pressure"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/patient_heart_rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/patient_bp"
+        android:layout_below="@+id/patient_bp"
+        android:layout_marginTop="31dp"
+        android:text="@string/heart_rate"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/temperature_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/patient_bp"
+        android:layout_toRightOf="@+id/patient_temp"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/blood_presure_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/patient_heart_rate"
+        android:layout_toRightOf="@+id/patient_bp"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/heart_rate_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/patient_heart_rate"
+        android:layout_alignBottom="@+id/patient_heart_rate"
+        android:layout_toRightOf="@+id/patient_heart_rate"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/seenByDoctorDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/backButtonFromViewRecords"
+        android:layout_centerHorizontal="true"
+        android:text="Has ---- been seen by a doctor."
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/patient_temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/patient_bp"
+        android:layout_below="@+id/timeText"
+        android:layout_marginTop="15dp"
+        android:text="@string/temperature"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/visitNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/loadButton"
+        android:layout_alignBottom="@+id/loadButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/patient_bp"
+        android:ems="10"
+        android:hint="@string/visitNumber"
+        android:inputType="number" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/healthcard_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:text="---"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/timeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loadButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp"
+        android:text="Time"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/loadButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/healthcard_number"
+        android:layout_marginTop="24dp"
+        android:onClick="viewVisit"
+        android:text="@string/load_text" />
+
+    <TextView
+        android:id="@+id/numOfVisitsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/loadButton"
+        android:layout_marginTop="14dp"
+        android:text="@string/num_of_visits"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/num_of_visits"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/numOfVisitsText"
+        android:layout_toRightOf="@+id/numOfVisitsText"
+        android:text="--" />
+
+</RelativeLayout>

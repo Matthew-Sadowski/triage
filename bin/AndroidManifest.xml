@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.group0943.triage"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="18" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".Load_Patient_Records_Activity"
+            android:label="@string/title_activity_load__patient__records_" >
+        </activity>
+        <activity
+            android:name=".CreateVisitActivity"
+            android:label="@string/title_activity_create_visit" >
+        </activity>
+        <activity
+            android:name=".UpdateExistingActivity"
+            android:label="@string/title_activity_update_existing" >
+        </activity>
+        <activity
+            android:name=".ViewVisitActivity"
+            android:label="@string/title_activity_view_visit" >
+        </activity>
+        <activity
+            android:name=".CreatePatientRecord"
+            android:label="@string/title_activity_create_patient_record" >
+        </activity>
+        <activity
+            android:name=".ListOfPatientsActivity"
+            android:label="@string/title_activity_list_of_patients" >
+        </activity>
+        <activity
+            android:name=".PhysicianActivity"
+            android:label="@string/title_activity_physician" >
+        </activity>
+        <activity
+            android:name=".LookUpPatientActivity"
+            android:label="@string/title_activity_look_up_patient" >
+        </activity>
+        <activity
+            android:name=".ViewVitals"
+            android:label="@string/title_activity_view_vitals" >
+        </activity>
+        <activity
+            android:name=".RecordSymptomsActivity"
+            android:label="@string/title_activity_record_symptoms" >
+        </activity>
+        <activity
+            android:name=".ViewPrescriptionActivity"
+            android:label="@string/title_activity_view_prescription" >
+        </activity>
+    </application>
+
+</manifest>

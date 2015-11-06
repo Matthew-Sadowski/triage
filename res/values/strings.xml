@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Triage</string>
+    <string name="Patient_Records">Patient Records</string>
+    <string name="Create_Visit_Record">Create Visit Record</string>
+    <string name="Update_Visit_Record">Update Visit Record</string>
+    <string name="View_Visit_Record">View Visit Record</string>
+    <string name="patient_data_header">Patient Data</string>
+    <string name="health_card_hint">Health Card Number</string>
+    <string name="date_of_birth_hint">YYYY-MM-DD</string>
+    <string name="name_hint">Example Smith</string>
+    <string name="view_prescription">View Prescription</string>
+    <string name="load_patient_data">Load Patient Data</string>
+    <string name="health_card_text">Health Card:</string>
+    <string name="name_text">Name:</string>
+    <string name="nurse_text">Nurse</string>
+    <string name="doctor_text">Physician</string>
+    <string name="login_as_text">Logged in as:</string>
+    <string name="visitNumber">Visit Number:</string>
+    <string name="load_vitals">Load Vitals Info</string>
+    <string name="num_of_visits">Number of Visits:</string>
+    <string name="date_of_birth_text">Date of Birth:</string>
+    <string name="action_settings">Settings</string>
+    <string name="Create_New_Visit">Create a new Visit</string>
+    <string name="symptoms_hint">Enter notes here.</string>
+    <string name="title_activity_update_exisiting">UpdateExisitingActivity</string>
+    <string name="Update_Existing">Update an exisiting visit record</string>
+    <string name="healthcard_number_field">Health card number</string>
+    <string name="temperature_field">Temperature in degrees Celsius</string>
+    <string name="heart_rate_field">Heart rate in beats per minute</string>
+    <string name="save">Save</string>
+    <string name="patient_symptoms">Patient Prescription</string>
+    <string name="patient_list">Patient List</string>
+    <string name="load_text">Load</string>
+    <string name="next_text">Next Visit</string>
+    <string name="temperature">Temperature:</string>
+    <string name="blood_pressure">Blood Pressure:</string>
+    <string name="heart_rate">Heart Rate:</string>
+    <string name="updateText">Update</string>
+    <string name="backButtonText">Back</string>
+    <string name="seen_by_doc">Seen by a Doctor?</string>
+    <string name="createPatientRecordText">Create Record</string>
+    <string name="username_hint">Username</string>
+    <string name="password_hint">Password</string>
+    <string name="login_screen">Login Screen</string>
+    <string name="blood_pressure_field">Blood pressure-systolic/diastolic</string>
+    <string name="title_activity_load__patient__records_">Load_Patient_Records_Activity</string>
+    <string name="title_activity_create_visit">CreateVisitActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_update_existing">UpdateExistingActivity</string>
+    <string name="title_activity_view_visit">ViewVisitActivity</string>
+    <string name="title_activity_create_patient_record">CreatePatientRecord</string>
+    <string name="title_activity_list_of_patients">ListOfPatientsActivity</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_physician">PhysicianActivity</string>
+    <string name="title_activity_look_up_patient">LookUpPatientActivity</string>
+    <string name="title_activity_view_vitals">ViewVitals</string>
+    <string name="title_activity_record_symptoms">RecordSymptomsActivity</string>
+    <string name="title_activity_view_prescription">ViewPrescriptionActivity</string>
+
+</resources>
